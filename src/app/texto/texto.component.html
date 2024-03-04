@@ -1,0 +1,17 @@
+<div class="text-container">
+    <span>{{text}}</span>
+    <div class="button-text-container">
+        <button (click)="decrement()">
+            -
+        </button>
+
+        <label>{{number}}</label>
+
+        <button (click)="increment()">
+            +
+        </button>
+    </div>    
+    <div>
+        <h2 [ngStyle]="{'font-size.px': number}">Me electrocutaste pedrito</h2>
+    </div>
+</div>

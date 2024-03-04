@@ -1,26 +1,47 @@
 <main>
-  <header>
+  <header class="header">
     <div>
       <h1>Bienvenido a {{title}}</h1>
     </div>
   </header>
   
-  <app-contador></app-contador>
-
-  <div class="main">
-    <div class="nelson">
-      <h2>Habilidades</h2>
-      <ul>
-        <li>Python</li>
-        <li>PostgreSQL</li>
-        <li>Experto en Angular</li>
-      </ul>
+  <div class="navbar">
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#" class="right">Link</a>
+  </div>
+  
+  <div class="row">
+    <div class="side">
+      <div class="card">
+        <h2 class="card-header">Acerca de</h2>
+        <div class="card-body">
+          <ul>
+            <li>Curso de angular con los panas</li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+        <h2 class="card-header">Sobre Mi</h2>
+        <div class="card-body">
+          <ul>
+            <li>Nombre: {{name}}</li>
+            <li>Edad: {{lastName}}</li>
+            <li>Sexo: {{age}}</li>
+            <li>Correo: {{email}}</li>
+            <li>Experiencia: {{experience}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <app-page-content></app-page-content>
     </div>
   </div>
-
-  <footer>
-    <div class="center">
-      <h2>Gracias por visitar mi sitio web</h2>
-    </div>
-  </footer>
+  
+  <div class="footer">
+    <h5>Desarrollado por Ing. Nelson Rene Gordillo Gonzalez®</h5>
+  </div>
 </main>

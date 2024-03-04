@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'my-first-app-angular';
   name = 'Nelson';
+  lastName = 'Gonzalez';
+  age = 24;
+  email = 'nelsonrene.gg@gmail.com';
+  experience = 'Junior';
 }
