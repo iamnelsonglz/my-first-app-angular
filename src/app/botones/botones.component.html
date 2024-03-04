@@ -1,11 +1,11 @@
-<h1>Componente botones</h1>
+<div class="button-container">
+    <div>
+        <button class="btn btn-danger" (click)="text_color = 'text-danger'">Color Rojo</button>
+        <button class="btn btn-success mx-2" (click)="text_color = 'text-success'">Color Verde</button>
+        <button class="btn btn-primary" (click)="text_color = 'text-primary'">Color Azul</button>
+    </div>
 
-<div>
-    <button class="btn btn-danger" (click)="text_color = 'text-danger'">Color Rojo</button>
-    <button class="btn btn-success mx-2" (click)="text_color = 'text-success'">Color Verde</button>
-    <button class="btn btn-primary" (click)="text_color = 'text-primary'">Color Azul</button>
+    <p class="{{text_color}}">
+        <b>Texto que va cambiar de color</b>
+    </p>
 </div>
-
-<p class="{{text_color}}">
-    <b>Texto que va cambiar de color</b>
-</p>
